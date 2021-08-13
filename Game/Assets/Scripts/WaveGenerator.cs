@@ -33,7 +33,7 @@ public class WaveGenerator : MonoBehaviour
         waterVertices.Dispose();
         waterNormals.Dispose();
     }
-    
+    //[BurstCompile]
     private struct UpdateMeshJob:IJobParallelFor
     {
         public NativeArray<Vector3> vertices;
